@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+  :root{
+    --cor1: #314987;
+    --cor2: #6346bd00;
+    --cor3: #272772ac;
+  
+  }
+  *{
+    margin: 1px;
+    padding:0;
+  }
+
+  body{
+    background-color:  var(--cor2);
+    font-family: sans-serif;
+  }
+
+  header{
+    background-image: linear-gradient(to bottom, var(--cor1 ), var(--cor2)); /*Direção que vai,cor inicial e depois cor final*/
+    min-height: 130px;/*Altura minima*/
+    text-align: center;
+    padding-top: 50px;/*Espaçamento dentro da caixa de 50px*/ 
+  }
+
+  header > h1 {
+    color:#1b1b35;
+    font-weight: bolder;/*Peso da fonte - 100 a 900, bold, bolder*/
+    margin-bottom: 10px; /*Espaço externo até o próximo elemento, no caso, inferior (fora da caixa)*/
+  }
+
+  header > p{
+    color:#131372;
+  }
+
+  nav{
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 1px 1px 3px #1c0654;/*(X,Y, extensão e cor)*/
+
+  }
+
+  nav > a{
+    color: rgb(30, 10, 111);
+    padding:10px;
+    text-align: center;
+    text-decoration: underline;/*Sublinhado(none, overline, underline)*/
+    font-weight: bold;
+    border-radius: 3px;/*Arredondamento das vértices*/
+    transition-duration: 0.5s; /*Duração da transição para outro estado*/
+  }
+
+  nav > a:hover{
+    font-size: 20px;/*Pseudo classe, adiciona um estado especial*/
+    background-color: var(--cor3);
+    text-align: center;
+  }
+main {
+background-color: white;
+min-width: 320px;/*Largura Minima*/
+max-width: 1000px;/*Largura máxima*/
+margin:auto;/* Utilizado nesse contexto para centralizar o main*/
+margin-top: 5px;
+padding: 20px;/*Espaço interno da caixa de texto*/
+border-top-left-radius:10px; /*Arredondamento da borda*/
+border-top-right-radius:10px;
+text-align:center;
+box-shadow: 3px 2px 5px 0px;/*Sombra de caixa*/
+}
+
+main h1{
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    padding: 5px 0; /*tb rl*/
+}
+
+main h2 {
+  background-image: linear-gradient(to right, var(--cor1),transparent);
+  padding: 5px 0; /*tb rl*/
+}
+
+main h3 {
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    padding: 5px 0; /*tb rl*/
+  }
+  
+main h4 {
+    padding: 8px 2px; /*tb rl*/
+}
+
+main p{
+font-size: 18px;
+text-align: justify;/*center, left, right, justify*/
+text-indent: 30px;
+margin: 15px 0;
+}
+
+img, iframe{
+  width: 35%;
+  border: 5px double #4936ab; /*Shorthand border: espessura, estilo e cor*/
+  
+}
+figcaption{
+  font-size: 12px;
+}
+
+footer{
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  font-weight:bold ;
+  color: black
+}
